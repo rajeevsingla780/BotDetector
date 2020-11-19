@@ -1,5 +1,4 @@
 from gtts import gTTS 
-from playsound import playsound
 import os
 def fun(t):
     mytext = str(t)
@@ -10,6 +9,6 @@ def fun(t):
     
     myobj.save(os.path.join("welcome.mp3")) 
 
-    playsound(os.path.join("welcome.mp3"))
+    os.system(os.path.join("welcome.mp3"))
     os.remove(os.path.join("welcome.mp3"))
  
