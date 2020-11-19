@@ -1,5 +1,6 @@
 espeak
 libespeak1
+ffmpeg
 libsm6
 libxrender1
 libfontconfig1
