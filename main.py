@@ -1,14 +1,14 @@
-from gtts import gTTS 
-import os
-def fun(t):
-    mytext = str(t)
+import pyttsx3 
   
-    language = 'en'
-
-    myobj = gTTS(text=mytext, lang=language, slow=False) 
+def fun(t):
+    engine = pyttsx3.init() 
     
-    myobj.save(os.path.join("welcome.mp3")) 
+    # testing 
+    engine.setProperty('rate',120)
+    engine.setProperty('volume',0.9)
+    engine.say(str(t))
+   
+    engine.runAndWait()
 
-    os.system(os.path.join("welcome.mp3"))
   
  
