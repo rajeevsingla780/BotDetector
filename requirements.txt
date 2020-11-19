@@ -1,10 +1,10 @@
 Flask==1.1.2
 gunicorn==19.9.0
-pyttsx3
+gTTS
 scikit-learn>=0.18
 numpy>=1.9.2
 imutils==0.5.3
 opencv-python-headless
 requests==2.25.0
 Jinja2==2.10.1
-py-espeak-ng
+playsound
