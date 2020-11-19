@@ -7,9 +7,9 @@ def fun(t):
     language = 'en'
 
     myobj = gTTS(text=mytext, lang=language, slow=False) 
+    
+    myobj.save(os.path.join("welcome.mp3")) 
 
-    myobj.save("welcome.mp3") 
-
-    playsound("welcome.mp3")
-    os.remove('welcome.mp3')
+    playsound(os.path.join("welcome.mp3"))
+    os.remove(os.path.join("welcome.mp3"))
  
