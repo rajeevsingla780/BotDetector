@@ -1,3 +1,6 @@
 espeak
 libespeak1
-libpulse0
+libsm6
+libxrender1
+libfontconfig1
+libice6
