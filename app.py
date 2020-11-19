@@ -16,10 +16,12 @@ def api():
           a=request.form.get('First')
           print(a)
           main.fun("NOW YOU WILL LISTEN A FOUR DIGIT NUMBER .YOU HAVE TO GESTURE ACCORDINGLY TO SHOW YOUR IDENTITY u will get only 7 sec for a particular number")
+          time.sleep(9)
           list1=[0,0,0,0]
           for i in range(0,4):
               num=random.randint(0,4)
               main.fun(num)
+              time.sleep(4) 
               list1[i]=num
           print(list1)    
           main.fun("Show the First Number ")
