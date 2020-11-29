@@ -1,7 +1,7 @@
 import pyttsx3 
   
 def fun(t):
-    engine = pyttsx3.init() 
+    engine = pyttsx3.init('espeak') 
     
     # testing 
     engine.setProperty('rate',120)
