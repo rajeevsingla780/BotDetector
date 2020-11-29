@@ -7,4 +7,3 @@ imutils==0.5.3
 opencv-python-headless
 requests==2.25.0
 
-espeak
